@@ -1,0 +1,1 @@
+# sale-card-frontend-mantor-chalenge
