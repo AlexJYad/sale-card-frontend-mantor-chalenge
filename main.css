@@ -17,16 +17,12 @@ html {
 }
 
 body {
-  height: 90vh;
+  height: 100vh;
   background-color: hsl(204, 43%, 93%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 40px 20px;
 }
 
 .card {
-  width: 630px;
-  height: 473px;
   box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   overflow: hidden;
@@ -45,8 +41,8 @@ body {
 }
 
 .left-section {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   background-color: hsl(179, 62%, 43%);
   display: inline-block;
   vertical-align: top;
@@ -54,8 +50,8 @@ body {
 }
 
 .right-section {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   background-color: #57bfbe;
   display: inline-block;
   padding: 40px;
@@ -137,16 +133,47 @@ ul {
 }
 
 footer {
-  background-color: black;
-  height: 66px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  visibility: collapse;
 }
 
 footer a {
   color: white;
+}
+
+@media (min-width: 500px) {
+  body {
+    height: 90vh;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 630px;
+    height: 473px;
+  }
+  .left-section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .right-section {
+    width: 50%;
+    height: 100%;
+  }
+  .bottom-section {
+    width: 100%;
+    height: 55%;
+  }
+  footer {
+    background-color: black;
+    height: 66px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+  }
 }
